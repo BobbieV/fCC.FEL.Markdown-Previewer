@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import ReactMarkdown from "react-markdown";
+import Markdown from "react-markdown";
 
 const defaultMarkdown = `
 # Welcome to my React Markdown Previewer!
@@ -50,7 +50,7 @@ function App() {
           onChange={(e) => setMarkdownText(e.target.value)}  >
           </textarea>
         <div id="preview">
-          <ReactMarkdown>{markdownText}</ReactMarkdown>
+          <Markdown>{markdownText}</Markdown>
         </div>
         </div>
       </div>
